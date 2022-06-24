@@ -13,6 +13,6 @@ function attachDigitBtnEvents(digitBtns) {
     digitBtns.forEach((button) => button.addEventListener('click', () => appendDigit(button.innerText)));
 }
 
-function appendDigit(digit) {
+function appendDisplay(digit) {
     
 }
