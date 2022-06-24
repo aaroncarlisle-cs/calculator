@@ -43,25 +43,27 @@ function someFunction(evt) {
 
 function inputDigit(evt) {
     let digit = evt.target.innerText;
-    console.log(digit);
     if (!operatorSet) {
         setFirstNum(digit);
+        appendCurrentDisplay(num1);
+    } else {
+        setSecondNum(digit);
+        appendCurrentDisplay(num2);
     }
-    else setSecondNum(digit);
 }
 function setFirstNum(digit) {
     if (newNum(num1)) {
         num1 = digit;
+    } else { 
+        num1 += digit;
     }
-    else num1 += digit;
-    appendCurrentDisplay(num1);
 }
 function setSecondNum(digit) {
-    if(newNum(num2)) {
+    if (newNum(num2)) {
         num2 = digit;
+    } else {
+        num2+= digit;
     }
-    else num2+= digit;
-    appendCurrentDisplay(num2);
 }
 function newNum(num) {
     return num.length == 1 && num == '0'
@@ -69,15 +71,28 @@ function newNum(num) {
 function appendCurrentDisplay(num) {
     document.querySelector('.display-current').innerText = num;
 }
-
-
-
-
-
 function inputDecimal(evt) {
-    let decimal = evt.target.innerText;
-    console.log(decimal);
+    if (!operatorSet) {
+        num1 = appendDecimal(num1);
+        appendCurrentDisplay(num1)
+    } else {
+        num2 = appendDecimal(num2);
+        appendCurrentDisplay(num2)
+    }
 }
+function appendDecimal(num) {
+    if (!decimalSet) {
+        if (newNum(num)) {
+            num = '0.';
+            decimalSet = true;
+        } else {
+            num += '.';
+            decimalSet = true;
+        }
+    }
+    return num;
+}
+
 function inputPercent(evt) {
     let percent = evt.target.innerText;
     console.log(percent);
