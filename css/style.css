@@ -40,9 +40,28 @@ header {
     margin: 100px 10px 10px 10px;
 }
 .calculator-display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     height: 75px;
     background-color: red;
     border: 2px inset red;
+}
+.display-equation {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border: 1px solid green;
+}
+.display-result {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1px solid green;
+    font-size: 32px;
+    font-weight: 700;
+    color: silver;
+    padding: 5px;
 }
 .calculator-label {
     display: flex;
@@ -70,7 +89,7 @@ header {
     background-color: antiquewhite;
     font-size: 18px;
 }
-#equals-btn {
+#equals {
     width: 160px;
     height: 75px;
     background-color: orange;
