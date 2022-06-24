@@ -47,7 +47,7 @@ header {
     background-color: red;
     border: 2px inset red;
 }
-.display-equation {
+.display-history {
     display: flex;
     align-items: center;
     height: 30px;
@@ -57,7 +57,7 @@ header {
     color: silver;
     padding: 10px;
 }
-.display-result {
+.display-current {
     display: flex;
     align-items: center;
     height: 40px;
