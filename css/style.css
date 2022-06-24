@@ -52,16 +52,20 @@ header {
     align-items: center;
     height: 30px;
     border: 1px solid green;
+    font-size: 20px;
+    font-weight: 700;
+    color: silver;
+    padding: 10px;
 }
 .display-result {
     display: flex;
     align-items: center;
     height: 40px;
     border: 1px solid green;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 700;
     color: silver;
-    padding: 5px;
+    padding: 10px;
 }
 .calculator-label {
     display: flex;
