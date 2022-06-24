@@ -93,6 +93,10 @@ header {
     background-color: antiquewhite;
     font-size: 18px;
 }
+.btn:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
 #equals {
     width: 160px;
     height: 75px;
