@@ -73,6 +73,7 @@ header {
 #equals-btn {
     width: 160px;
     height: 75px;
+    background-color: orange;
 }
 footer {
     height: 50px;
