@@ -4,45 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/b80dae9188.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <title>Calculator</title>
 </head>
 <body>
-    <header><h1 class="title">Calculator</h1></header>
+    <header>
+        <h1 class="title">Calculator</h1>
+    </header>
     <div class="container">
         <div class="calculator">
-            <div class="display">
+            <div class="calculator-ui">
+                <div class="calculator-display">
 
-            </div>
-            <div class="keypad">
-                <button id="clear-btn" class="btn">C</button> 
-                <button id="clear-entry-btn" class="btn">CE</button> 
-                <button id="percent-btn" class="btn">%</button> 
-                <button id="divide-btn" class="btn">&divide</button> 
-
-                <button class="btn number">7</button> 
-                <button class="btn number">8</button> 
-                <button class="btn number">9</button> 
-                <button id="multiply-btn" class="btn">&times</button> 
-
-                <button class="btn number">4</button> 
-                <button class="btn number">5</button> 
-                <button class="btn number">6</button> 
-                <button id="subtract-btn" class="btn">&minus</button> 
-
-                <button class="btn number">1</button> 
-                <button class="btn number">2</button> 
-                <button class="btn number">3</button> 
-                <button id="add-btn"" class="btn">&plus</button> 
-
-                <button class="btn number">0</button> 
-                <button id="decimal-btn" class="btn">.</button> 
-                <button id="equals-btn" class="btn">&equals</button> 
-
-
-
+                </div>
+                <div class="calculator-label">
+                    <i class="fa-solid fa-atom"></i><p>QUANTUM IV</p>
+                </div>
+                <div class="keypad">
+                    <button id="clear-btn" class="btn">C</button> 
+                    <button id="clear-entry-btn" class="btn">CE</button> 
+                    <button id="percent-btn" class="btn">%</button> 
+                    <button id="divide-btn" class="btn">&divide</button> 
+    
+                    <button class="btn number">7</button> 
+                    <button class="btn number">8</button> 
+                    <button class="btn number">9</button> 
+                    <button id="multiply-btn" class="btn">&times</button> 
+    
+                    <button class="btn number">4</button> 
+                    <button class="btn number">5</button> 
+                    <button class="btn number">6</button> 
+                    <button id="subtract-btn" class="btn">-</button> 
+    
+                    <button class="btn number">1</button> 
+                    <button class="btn number">2</button> 
+                    <button class="btn number">3</button> 
+                    <button id="add-btn"" class="btn">+</button> 
+    
+                    <button class="btn number">0</button> 
+                    <button id="decimal-btn" class="btn">.</button> 
+                    <button id="equals-btn" class="btn">=</button> 
+                </div>
             </div>
         </div>
     </div>
-    <footer><p class="footer"></p></footer>
+    <footer>
+        &copy; 2022 aaroncarlisle-cs 
+        <span id="github">
+            <a href="https://www.github.com/aaroncarlisle-cs">
+                <i class="fa-brands fa-github" data-fa-transform="grow-2"></i>
+            </a>
+        </span>
+    </footer>
 </body>
 </html>
