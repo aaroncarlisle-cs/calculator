@@ -34,7 +34,7 @@ function operatorEvents() {
     divide.addEventListener('click', setOperand);
     equals.addEventListener('click', someFunction);
     clearEntry.addEventListener('click', someFunction);
-    clear.addEventListener('click', someFunction);  
+    clear.addEventListener('click', inputClear);  
 }
 
 function someFunction(evt) {
@@ -101,6 +101,15 @@ function inputPercent(evt) {
 function setOperand(evt) {
     let operand = evt.target.innerText;
     console.log(operand);
+}
+
+function inputClear(evt) {
+    num1 = "0";
+    num2 = "";
+    operatorSet = false;
+    decimalSet = false;
+    appendCurrentDisplay(num1);
+    console.log("clear");
 }
 
 window.addEventListener('load', numericEvents);
