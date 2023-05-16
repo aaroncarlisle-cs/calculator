@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #222222;
 }
 header {
     height: 100px;
@@ -15,6 +16,10 @@ header {
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+}
+.title {
+    font-family: 'Orbitron', sans-serif;
+    color: #F0EFEC;
 }
 .container{
     display: flex;
@@ -28,15 +33,15 @@ header {
     flex-shrink: 0;
     width: 378px;
     height: 685px;
-    border: 2px outset antiquewhite;
-    background-color: antiquewhite;
+    border: 2px outset #D1C5AD;
+    background-color: #D1C5AD;
     border-radius: 10px;
-    box-shadow: 5px 14px black;
+    box-shadow: 5px 14px #363430;
 }
 .calculator-ui {
     height: 570px;
-    background-color: grey;
-    border: 2px inset grey;
+    background-color: #4B4848;
+    border: 2px solid #363430;
     margin: 100px 10px 10px 10px;
 }
 .calculator-display {
@@ -44,40 +49,44 @@ header {
     flex-direction: column;
     align-items: flex-end;
     height: 75px;
-    background-color: red;
-    border: 2px inset red;
+    background-color: #6F2421;
+    border: 2px solid #6F2421;
 }
 .display-history {
     display: flex;
     align-items: center;
     height: 30px;
-    border: 1px solid green;
+    border: 0px solid green;
     font-size: 20px;
     font-weight: 700;
-    color: silver;
+    color: #F0EFEC;
     padding: 10px;
+    font-family: 'Orbitron', sans-serif;
 }
 .display-current {
     display: flex;
     align-items: center;
     height: 40px;
-    border: 1px solid green;
+    border: 0px solid green;
     font-size: 36px;
     font-weight: 700;
-    color: silver;
+    color: #F0EFEC;
     padding: 10px;
+    font-family: 'Orbitron', sans-serif;
 }
 .calculator-label {
     display: flex;
     justify-content: space-between;
     height: 60px;
-    border-top: 20px inset grey;
-    border-bottom: 5px inset grey;
+    border-top: 20px solid #363430;
+    border-bottom: 0;
     padding: 15px;
-    font-size: 20px;
-    color: silver;
+    font-size: 22px;
+    color: #F0EFEC;
     font-weight: 700;
+    font-family: 'Rubik', sans-serif;
 }
+
 .keypad {
     display: flex;
     flex-direction: row;
@@ -85,31 +94,43 @@ header {
     padding: 5px;
 }
 .btn {
-    color: black;
+    color: #363430;
     width: 75px;
     height: 75px;
     margin: 5px;
-    border: 2px outset antiquewhite;
-    background-color: antiquewhite;
-    font-size: 18px;
+    border: 2px outset #D1C5AD;
+    border-radius: 5px;
+    background-color: #D1C5AD;
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
 }
 .btn:hover {
+    color: #4B4848;
     background-color: bisque;
     cursor: pointer;
+    transform: scale(1.025);
 }
 #equals {
     width: 160px;
     height: 75px;
+    background-color: #FE8033;
+}
+#equals:hover {
     background-color: orange;
 }
-footer {
+footer, footer a {
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #F0EFEC;
 }
 #github {
     padding: 10px;
+}
+#github:hover {
+    transform: scale(1.1);
 }
